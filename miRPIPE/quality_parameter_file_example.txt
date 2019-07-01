@@ -1,0 +1,16 @@
+working_directory: /home/maria/experiments
+sra_table: /home/maria/experiments/SraRunTable_SRP157852.txt
+number_of_analysis: 7
+mean_or_min_or_noMM_1: 1
+q_number_1: 10
+mean_or_min_or_noMM_2: 1
+q_number_2: 20
+mean_or_min_or_noMM_3: 1
+q_number_3: 30
+mean_or_min_or_noMM_4: 0
+q_number_4: 20
+mean_or_min_or_noMM_5: 0
+q_number_5: 30
+mean_or_min_or_noMM_6: 0
+q_number_6: 40
+mean_or_min_or_noMM_7: 2
