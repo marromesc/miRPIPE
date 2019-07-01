@@ -52,11 +52,12 @@ In parameter file, type 0 for mean analysis, 1 for min analysis or 2 for noMM=0.
 
 OUTPUTS:
 
-*/home/user/working_directory/experiment/batch/quality_analysis_commands.bat*. Running it you will also run parallely BATCH QUALITY for all the analysis indicated before.
+- */home/user/working_directory/experiment/batch/quality_analysis_commands.bat*. Running it you will also run parallely BATCH QUALITY for all the analysis indicated before.
+- */home/user/working_directory/experiment/batch/quality_boxplot_commands.bat*. Running it you will also run parallely BATCH QUALITY BOXPLOT for all the analysis indicated before.
 
 **3. batch_QUALITY.sh**
 
-Creating batch file for quality sRNAbench analysis.
+Creates a batch file for quality sRNAbench analysis parallely.
 
 USAGE:
 
@@ -66,5 +67,17 @@ Type 0 for mean analysis, 1 for min analysis or 2 for noMM=0
 
 OUTPUTS: 
 
-The output will be in your batch folder. Example: */working_dir/experiment/batch/batch_QUALITY_type_20SRP049635.bat*. Running it you will run BATCH_QUALITY script parallely for all the analysis indicated in the parameter file.
+The output will be generated in the batch folder. Example: */working_dir/experiment/batch/batch_QUALITY_type_20SRP049635.bat*. Running it you will run BATCH_QUALITY script parallely for all the analysis indicated in the parameter file.
+
+**4. batch_boxplot_quality.sh**
+
+Creates the input to generate a boxplot to visualize the sequencation quality in the isoMiRs profiles.
+
+USAGE: 
+
+*sh batch_boxplot_quality.sh /home/user/working_directory /path/to/SraRunTable.batt mean_or_min_or_noMM Q*
+
+OUTPUTS:
+
+The output will be generated in the logs folder. Example: */working_dir/experiment/logs/quality_boxplotting/SRR*.txt*.
 
