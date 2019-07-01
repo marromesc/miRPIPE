@@ -38,6 +38,7 @@ OUTPUTS:
 
 - */home/user/working_directory/experiment/batch/prepro.bat*. An optionally batch file output. Running it you will download the samples parallely if you have not done before. 
 - */home/user/working_directory/experiment/batch/bench.bat*. Runnng it you will perfom sRNAbench analysis. 
+- */home/user/working_directory/experiment/logs/parameter_file.txt". Samples report. It will be used by other scripts.
 
 **2. quality_creator.sh**
 
