@@ -1,6 +1,6 @@
 # miRPIPE
 
-This is my Master Thesis project. 
+This is my Master Thesis project at the University of Granada (UGR).
 
 ## miRPIPE program
 
