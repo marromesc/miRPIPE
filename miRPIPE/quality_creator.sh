@@ -40,6 +40,6 @@ do
   TYPE=$( grep mean_or_min_or_noMM_$i: $QUALITY_PARAM_FILE | awk '{print $2}' )
   Q=$( grep q_number_$i: $QUALITY_PARAM_FILE | awk '{print $2}' )
   echo "sh $HOME/opt/batch_QUALITY.sh $WORKING_DIR $SRA_TABLE $TYPE $Q $ADAPTER" >> $WORKING_DIR/$EXPERIMENT/batch/quality_analysis_commands.bat
-  echo "sh $HOME/opt/batch_boxplot_quality.sh $QUALITY_PARAM_FILE $TYPE $Q" >> $WORKING_DIR/$EXPERIMENT/batch/quality_boxplot_commands.bat
+  echo "sh $HOME/opt/batch_boxplot_quality.sh $WORKING_DIR $SRA_TABLE $TYPE $Q" >> $WORKING_DIR/$EXPERIMENT/batch/quality_boxplot_commands.bat
   i=$(($i+1))
 done
