@@ -28,5 +28,7 @@ If adapter_ask is 0, it means that there is no adapter. Type 1 in adapter_ask to
 
 OUTPUTS: 
 
+**quality_creator.sh**
 
+**batch_QUALITY.sh**
 
