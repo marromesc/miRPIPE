@@ -29,6 +29,6 @@ while [ $i -le $NUMBER_OF_ANALYSIS ]
 do
   TYPE=$( grep mean_or_min_or_noMM_$i: $QUALITY_PARAM_FILE | awk '{print $2}' )
   Q=$( grep q_number_$i: $QUALITY_PARAM_FILE | awk '{print $2}' )
-  echo "sh /home/usr/opt/miRPIPE/batch_QUALITY.sh $WORKING_DIR $SRA_TABLE $ADAPTER $TYPE $Q" >> $WORKING_DIR/$EXPERIMENT/batch/quality_analysis_commands.bat
+  echo "sh $HOME/opt/miRPIPE/batch_QUALITY.sh $WORKING_DIR $SRA_TABLE $ADAPTER $TYPE $Q" >> $WORKING_DIR/$EXPERIMENT/batch/quality_analysis_commands.bat
   i=$(($i+1))
 done
