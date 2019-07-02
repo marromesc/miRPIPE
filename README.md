@@ -40,7 +40,21 @@ OUTPUTS:
 - */home/user/working_directory/experiment/batch/bench.bat*. Runnng it you will perfom sRNAbench analysis. 
 - */home/user/working_directory/experiment/logs/parameter_file.txt*. Samples report. It will be used by other scripts.
 
-**2. quality_creator.sh**
+**2. DE.sh**
+
+Creates a batch file that you can run to analyze the differential expression of your data.
+
+USAGE: 
+
+*sh DE.sh /home/user/working_directory /path/to/SraRunTable.txt column*
+
+In column, type the name of the SRA Table's column where it is the phenotypes conditions.
+
+OUTPUT:
+
+*/home/user/working_directory/experiment/batch/DE.bat*. Running it you will also run parallely both miRBase and miRGeneDB differential expression analysis.
+
+**3. quality_creator.sh**
 
 A simple script to parallelize quality sRNAbench analysis.
 
@@ -55,7 +69,7 @@ OUTPUTS:
 - */home/user/working_directory/experiment/batch/quality_analysis_commands.bat*. Running it you will also run parallely BATCH QUALITY for all the analysis indicated before.
 - */home/user/working_directory/experiment/batch/quality_boxplot_commands.bat*. Running it you will also run parallely BATCH QUALITY BOXPLOT for all the analysis indicated before.
 
-**3. batch_QUALITY.sh**
+**4. batch_QUALITY.sh**
 
 Creates a batch file for quality sRNAbench analysis parallely.
 
@@ -69,7 +83,7 @@ OUTPUTS:
 
 The output will be generated in the batch folder. Example: */working_dir/experiment/batch/batch_QUALITY_type_20SRP049635.bat*. Running it you will run BATCH_QUALITY script parallely for all the analysis indicated in the parameter file.
 
-**4. batch_boxplot_quality.sh**
+**5. batch_boxplot_quality.sh**
 
 Creates the input to generate a boxplot to visualize the sequencation quality in the isoMiRs profiles.
 
