@@ -85,7 +85,7 @@ The output will be generated in the batch folder. Example: */working_dir/experim
 
 **5. batch_ggplot_quality.sh**
 
-Creates the input to generate a boxplot to visualize the quality in the isoMiRs profiles with ggplot package in R.
+Create the input to generate a boxplot to visualize the quality in the isoMiRs profiles with ggplot package in R.
 
 USAGE: 
 
@@ -94,4 +94,16 @@ USAGE:
 OUTPUTS:
 
 The output will be generated in the logs folder. Example: */working_dir/experiment/logs/folder_output/input_+.txt*.
+
+**6. ggplot_quality.R**
+
+Visualization of the quality impact in isomiRs and other variants with ggplot package in R.
+
+USAGE: 
+
+*Rscript ggplot_quality.R results_directory path_to_input*
+
+OUTPUTS:
+
+The output will be generated in the results_directory that you have to create previously. 
 
