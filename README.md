@@ -93,5 +93,5 @@ USAGE:
 
 OUTPUTS:
 
-The output will be generated in the logs folder. Example: */working_dir/experiment/logs/folder_output/input_*.txt*.
+The output will be generated in the logs folder. Example: */working_dir/experiment/logs/folder_output/input_+.txt*.
 
