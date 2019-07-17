@@ -83,15 +83,15 @@ OUTPUTS:
 
 The output will be generated in the batch folder. Example: */working_dir/experiment/batch/batch_QUALITY_type_20SRP049635.bat*. Running it you will run BATCH_QUALITY script parallely for all the analysis indicated in the parameter file.
 
-**5. batch_boxplot_quality.sh**
+**5. batch_ggplot_quality.sh**
 
-Creates the input to generate a boxplot to visualize the sequencation quality in the isoMiRs profiles.
+Creates the input to generate a boxplot to visualize the quality in the isoMiRs profiles with ggplot package in R.
 
 USAGE: 
 
-*sh batch_boxplot_quality.sh /home/user/working_directory /path/to/SraRunTable.batt mean_or_min_or_noMM Q*
+*sh batch_ggplot_quality.sh /home/user/working_directory /path/to/SraRunTable.batt folder_output_name mean_or_min_or_noMM Q*
 
 OUTPUTS:
 
-The output will be generated in the logs folder. Example: */working_dir/experiment/logs/quality_boxplotting/SRR*.txt*.
+The output will be generated in the logs folder. Example: */working_dir/experiment/logs/folder_output/input_*.txt*.
 
