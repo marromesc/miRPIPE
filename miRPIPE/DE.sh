@@ -151,7 +151,7 @@ echo "miRBase_grpString:" $miRBase_STRING >> $WORKING_DIR/$EXPERIMENT/logs/param
 echo "miRGeneDB_grpString:" $miRGeneDB_STRING >> $WORKING_DIR/$EXPERIMENT/logs/parameters_file.txt
 
 # Lanzamos el sRNAde para el análisis de la expresión diferencial.
-echo "java -jar /opt/sRNAtoolboxDB/exec/sRNAde.jar input=$WORKING_DIR/$EXPERIMENT/results grpString=$miRBase_STRING output=$WORKING_DIR/$EXPERIMENT/results/diffExpr_miRBase grpDesc=$EXP_DESIGN web=TRUE" >> $WORKING_DIR/$EXPERIMENT/batch/DE.bat
-echo "java -jar /opt/sRNAtoolboxDB/exec/sRNAde.jar input=$WORKING_DIR/$EXPERIMENT/results grpString=$miRGeneDB_STRING output=$WORKING_DIR/$EXPERIMENT/results/diffExpr_miRGeneDB grpDesc=$EXP_DESIGN web=TRUE" >> $WORKING_DIR/$EXPERIMENT/batch/DE.bat
+java -jar /opt/sRNAtoolboxDB/exec/sRNAde.jar input=$WORKING_DIR/$EXPERIMENT/results grpString=$miRBase_STRING output=$WORKING_DIR/$EXPERIMENT/results/diffExpr_miRBase grpDesc=$EXP_DESIGN web=TRUE
+java -jar /opt/sRNAtoolboxDB/exec/sRNAde.jar input=$WORKING_DIR/$EXPERIMENT/results grpString=$miRGeneDB_STRING output=$WORKING_DIR/$EXPERIMENT/results/diffExpr_miRGeneDB grpDesc=$EXP_DESIGN web=TRUE
 
 echo "DIFFERENTIAL EXPPRESSION ANALYSIS DONE" >> $WORKING_DIR/$EXPERIMENT/logs/de_logs.txt
