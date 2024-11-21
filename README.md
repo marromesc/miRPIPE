@@ -10,9 +10,9 @@ miRPIPE is a set of scripts to parallelize the analysis of miRNA in human sample
    
 2. Move it to your opt folder.
    
-   ```
-   mv miRPIPE.zip /home/usr/opt/miRPIPE.zip*
-   ```
+```
+mv miRPIPE.zip /home/usr/opt/miRPIPE.zip*
+```
    
 3. Unzip
    
