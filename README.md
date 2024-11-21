@@ -28,7 +28,7 @@ chmod +x script_name.sh
 
 ## Scripts
 
-###`batch_prepro_bench.sh`
+### `batch_prepro_bench.sh`
 
 1. Creating working directory with these folders: 
 - data for the downloaded samples
