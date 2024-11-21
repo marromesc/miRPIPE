@@ -1,6 +1,6 @@
 # miRPIPE
 
-This is my Master's Thesis project at the University of Granada (UGR).
+This is part of my Master's Thesis project for the University of Granada (UGR).
 
 miRPIPE is a set of scripts to parallelize the analysis of miRNA in human samples with `sRNAtoolbox` (https://bioinfo2.ugr.es/srnatoolbox/). Feel free to use it to parallelize your projects.
 
