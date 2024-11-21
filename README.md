@@ -51,12 +51,11 @@ OUTPUTS:
 
 - `/home/user/working_directory/experiment/batch/prepro.bat`. An optionally batch file output. Running it you will download the samples parallelly if you have not done before. 
 - `/home/user/working_directory/experiment/batch/bench.bat`. Runnng it you will perfom sRNAbench analysis. 
-- */home/user/working_directory/experiment/logs/parameter_file.txt*. Samples report. It will be used by other scripts.
+- `/home/user/working_directory/experiment/logs/parameter_file.txt`. Samples report. It will be used by other scripts.
 
-###`DE.sh`
+### `DE.sh`
 
 Creates a batch file that you can run to analyze the differential expression of your data.
-
 
 USAGE: 
 
@@ -80,14 +79,14 @@ USAGE:
 sh batch_QUALITY.sh QUALITY_parameter_file.txt
 ```
 
-In the parameter file, type 0 for mean analysis, 1 for min analysis or 2 for noMM=0. You have a QUALITY_parameter_file.txt example in the documentation.
+In the parameter file, type 0 for mean analysis, 1 for min analysis or 2 for noMM=0. You have a `QUALITY_parameter_file.txt` example in the documentation.
 
 OUTPUTS:
 
 - `/home/user/working_directory/experiment/batch/quality_analysis_commands.bat`. Running it you will also run parallelly BATCH QUALITY for all the analysis indicated before.
 - `/home/user/working_directory/experiment/batch/quality_boxplot_commands.bat`. Running it you will also run parallelly BATCH QUALITY BOXPLOT for all the analysis indicated before.
 
-###`batch_QUALITY.sh`
+### `batch_QUALITY.sh`
 
 Creates a batch file for quality sRNAbench analysis parallely.
 
@@ -103,7 +102,7 @@ OUTPUTS:
 
 The output will be generated in the batch folder. Example: `/working_dir/experiment/batch/batch_QUALITY_type_20SRP049635.bat*`. Running it you will run `BATCH_QUALITY` script parallelly for all the analyses indicated in the parameter file.
 
-###`input_ggplot_quality.sh`
+### `input_ggplot_quality.sh`
 
 Create the input to generate a boxplot to visualize the quality in the isoMiRs profiles with `ggplot` package in R.
 
@@ -117,7 +116,7 @@ OUTPUTS:
 
 The output will be generated in the logs folder. Example: `/working_dir/experiment/logs/folder_output/input_+.txt`.
 
-###`ggplot_quality.R`
+### `ggplot_quality.R`
 
 Visualization of the quality impact in isomiRs and other variants with `ggplot` package in R.
 
